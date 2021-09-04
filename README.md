@@ -5,11 +5,11 @@ How to setup Airflow on Ubuntu
 Airflow uses some environment variables to replace default config values on the airflow.cfg file.
 The main environment variables are:
 
-*AIRFLOW_HOME: Sets airflow's home directory where you can find the airflow.cfg, dags folder, etc.
-**AIRFLOW_HOME="/root/airflow"
+* AIRFLOW_HOME: Sets airflow's home directory where you can find the airflow.cfg, dags folder, etc.
+** AIRFLOW_HOME="/root/airflow"
 
-*AIRFLOW__CORE__SQL_ALCHEMY_CONN: Sets airflow's database connection string
-**AIRFLOW__CORE__SQL_ALCHEMY_CONN="postgres://postgres:{password}@{host}:{port}/{db}"
+* AIRFLOW__CORE__SQL_ALCHEMY_CONN: Sets airflow's database connection string
+** AIRFLOW__CORE__SQL_ALCHEMY_CONN="postgres://postgres:{password}@{host}:{port}/{db}"
 
 You can use vim (command line text editor) to create/replace those environment variables:
     ```sh
