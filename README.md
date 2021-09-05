@@ -6,10 +6,13 @@ Airflow uses some environment variables to replace default config values on the 
 The main environment variables are:
 
 * AIRFLOW_HOME: Sets airflow's home directory where you can find the airflow.cfg, dags folder, etc.
-** AIRFLOW_HOME="/root/airflow"
-
+```sh
+AIRFLOW_HOME="/root/airflow"
+```
 * AIRFLOW__CORE__SQL_ALCHEMY_CONN: Sets airflow's database connection string
-** AIRFLOW__CORE__SQL_ALCHEMY_CONN="postgres://postgres:{password}@{host}:{port}/{db}"
+```sh
+AIRFLOW__CORE__SQL_ALCHEMY_CONN="postgres://postgres:{password}@{host}:{port}/{db}"
+```
 
 You can use vim (command line text editor) to create/replace those environment variables:
 ```sh
