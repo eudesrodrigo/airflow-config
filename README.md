@@ -12,9 +12,9 @@ The main environment variables are:
 ** AIRFLOW__CORE__SQL_ALCHEMY_CONN="postgres://postgres:{password}@{host}:{port}/{db}"
 
 You can use vim (command line text editor) to create/replace those environment variables:
-    ```sh
-    sudo vi /etc/environment
-    ```
+```sh
+sudo vi /etc/environment
+```
 
 ## Install Airflow
 ### Install Ubuntu dependencies required for Apache Airflow.
@@ -70,3 +70,8 @@ sudo kill -9 {process_id of airflow}
 ## Aiflow errors
 ### Fail to access the Airflow Webpage
 * Remove .pid files from $AIRFLOW_HOME directory and restart Ubuntu
+
+# Useful commands
+```sh
+airflow next_execution <dag_id>
+```
